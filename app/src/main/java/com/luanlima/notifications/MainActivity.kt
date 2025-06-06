@@ -81,6 +81,7 @@ class MainActivity : ComponentActivity() {
             ) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.POST_NOTIFICATIONS), 0)
                 return@with
+
             }
 
             notify(1, builder.build())
